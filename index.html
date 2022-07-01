@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <section id="input">
+            <p>Bill</p>
+            <input type="text" id="amount" placeholder="0">
+            <p>Select Tip %</p>
+            <div id="tips">
+                <button id="button">5%</button>
+                <button id="button">10%</button>
+                <button id="button">15%</button>
+                <button id="button">25%</button>
+                <button id="button">50%</button>
+                <input type="text" placeholder="Custom" id="custom">
+            </div>
+            <p>Number of People</p>
+            <input type="text" id="people" placeholder="0">
+        </section>
+        <section id="result">
+            <div id="tip-amount">
+                <aside>
+                    <h3>Tip Amount</h3>
+                    <p>/ person</p>
+                </aside>
+                <span id="tipAmount">$0.00</span>
+            </div>
+            <div id="tip-total">
+                <aside>
+                    <h3>Total</h3>
+                    <p>/ person</p>
+                </aside>
+                <span id="total-amount">$0.00</span>
+            </div>
+            <button id="reset">reset</button>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
